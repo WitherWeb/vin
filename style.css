@@ -1,0 +1,1038 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+:root {
+  --black: #222;
+  --gray-2: #4f4f4f;
+  --orange: #ffbf42;
+  --red: #d82121;
+  --primary: #45c1ff;
+  --font-family: "Inter", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
+}
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--black);
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+
+/**
+   * Add the correct display in IE 10+.
+   */
+
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+
+[hidden] {
+  display: none;
+}
+.legal-entity{
+  background: #ffe5b1;
+}
+.legal-entity-upper{
+  border: 2px solid var(--orange);
+}
+
+.legal-entity-upper::after{
+  background-color: var(--orange);
+  z-index: 2;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+}
+.legal-entity-down{
+  background-color: var(--orange);
+}
+.individual{
+  background: #cfedff;
+}
+.individual-upper{
+  border: 2px solid var(--primary);
+}
+.individual-upper::after{
+  background-color: var(--primary);
+  z-index: 2;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+}
+.individual-down{
+  display: none;
+  /* background-color: var(--primary); */
+}
+
+.individual{
+  background: #cfedff;
+}
+.details-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+}
+.margin-section {
+  margin-bottom: 32px;
+}
+.container-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.title-h3-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.item-details {
+  display: flex;
+  gap: 10px 20px;
+}
+.item-details-item {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.wrapper-item {
+  margin-bottom: 16px;
+}
+.details-text {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.title-h3 {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--black);
+}
+.title-h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--black);
+}
+.background-gray {
+  border-radius: 12px;
+  padding: 16px;
+  background: #f0f3f6;
+}
+.list-reset {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+}
+.name-span {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--gray-2);
+}
+.desk-span {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--black);
+}
+.container {
+  width: 745px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+}
+.header__content {
+  padding: 40px 0 0 0;
+}
+.header__content-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content-wrapper {
+  justify-content: space-between;
+  display: flex;
+  gap: 20px;
+}
+.header__img-container {
+  max-width: 240px;
+  height: 100%;
+}
+.header__img-container img {
+  width: 100%;
+  height: 100%;
+}
+.header__content-info-date {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--black);
+  margin-bottom: 2px;
+}
+
+.header__content-info-vin {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: var(--black);
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.header__content-info-car-name {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 133%;
+  color: var(--black);
+}
+
+.header__content-info-plate-history {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  color: var(--gray-2);
+  margin-bottom: 4px;
+}
+
+.header__content-info-list {
+  margin: 0;
+  padding-left: 16px;
+}
+.header__content-info-item {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--black);
+}
+
+.chart-container {
+
+}
+
+.chart {
+
+  margin-bottom: 20px;
+}
+.old{
+  border-radius:  6px 0 0 6px  ;
+  background-color: #cfedff;
+}
+.actual{
+  border-radius: 0 6px 6px 0 ;
+  background-color: #ffe5b1;
+}
+.owners-block {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.owner {
+  padding: 8px 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.disclaimer__wrapper {
+  border-radius: 12px;
+  padding: 16px;
+  background: #7c7c7c;
+}
+.disclaimer__desk {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: #fff;
+}
+
+.disadvantages__content-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 190px;
+  row-gap: 7px;
+  column-gap: 20px;
+}
+.disadvantages__content-item {
+  align-items: flex-start;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  color: var(--black);
+  display: flex;
+  gap: 5px;
+}
+
+.main-information__title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 16px;
+}
+
+.main-information__list {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.main-information__item {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+}
+
+.main-information__item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-history__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.registration-history__item-line{
+  width: 6px;
+  position: relative;
+  z-index: 1;
+  margin-right: 17px;
+}
+
+.registration-history__item-line-upper{
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 3;
+  background-color: white;
+}
+
+  .registration-history__item-line-down{
+    z-index: 2;
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    transform: translateX(-50%);
+  }
+.accident-history__count-label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--black);
+}
+
+.accident-history__item-info-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+}
+.accident-history__middle-line {
+  margin: 15px 0;
+  border: 1px solid #b7b7b7;
+}
+.accident-history__item-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accident-history__item-info-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.accident-history__item-info-damage-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.accident-history__item-info-damage-label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--gray-2);
+}
+.accident-history__item-info-damage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.accident-history__item-info-damage-item-desk {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--black);
+}
+.accident-history__wrapper-upper {
+  margin-bottom: 16px;
+}
+
+.inspection-history__item-wrapper {
+  margin-bottom: 16px;
+}
+
+.inspection-history__item-content-list {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, auto);
+}
+.inspection-history__item-content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1;
+}
+
+.service-maintenance__item-details {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.deposit__content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 20px;
+}
+
+.bankruptcy-registry__item-content
+
+  .bankruptcy-registry__item-content-text-deskr {
+  grid-column: span 2;
+}
+
+.taxi-usage__upper-wrapper {
+  margin-bottom: 16px;
+}
+
+.mobile-diagnosis__item-content-inspection {
+  margin-bottom: 10px;
+}
+
+.mobile-diagnosis__item-content-inspection-characteristics {
+  grid-template-columns: 1fr 1fr;
+}
+.mobile-diagnosis__item-content-inspection-characteristics {
+  margin-bottom: 6px;
+}
+
+.mobile-diagnosis__item-content-inspection-characteristics-details {
+  padding-left: 20px;
+}
+.mobile-diagnosis__item-content-inspection-characteristics-details li::marker {
+  color: #222;
+  background-color: #222;
+}
+
+.found-advertisements__item-name-and-link {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.found-advertisements__list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.found-advertisements__item-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  color: #fff;
+  background: #428aed;
+  border-radius: 6px;
+  padding: 6px 16px;
+}
+
+.found-advertisements__item-text {
+  margin-bottom: 10px;
+}
+
+.found-advertisements__item-name {
+  margin: 0;
+}
+
+.osago-policies__item-title-and-status {
+  gap: 7px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.osago-policies__item-title-and-status .title-h4 {
+  margin: 0;
+}
+
+.osago-policies__item {
+  margin-bottom: 16px;
+}
+.fines-information__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fines-information__item-content-photo-materials {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fines-information__item-content-photo-materials img {
+  max-width: 522px;
+  height: 392px;
+}
+
+.reviews__item-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviews__list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vin-information__content {
+  grid-template-columns: 1fr 1fr;
+}
+
+.car-photo__content img {
+  border-radius: 6px;
+}
+
+.registration-history__item {
+  height: 100%;
+  display: flex;
+}
+.registration-history__item img {
+}
+.registration-history__item-date {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 167%;
+  color: var(--black);
+  margin-right: 10px;
+  width: 130px;
+}
+
+.registration-history__item-info {
+  margin-left: 10px;
+}
+
+.registration-history__item-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.registration-history__upper-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.registration-history__upper-time-of-use {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--black);
+}
+.registration-history__upper-time-of-use-count {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--black);
+}
+.registration-history__list {
+  counter-reset: item-counter;
+}
+.registration-history__item {
+  counter-increment: item-counter;
+}
+.registration-history__item h4::before {
+  content: counter(item-counter) ". ";
+}
+.accident-history__list {
+  counter-reset: fine-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.accident-history__item {
+  counter-increment: fine-counter;
+  
+}
+.accident-history__item-title .accident-history__item-title-number::before {
+  content: counter(fine-counter);
+}
+
+.bankruptcy-registry__list {
+  counter-reset: num-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bankruptcy-registry__item {
+  counter-increment: num-counter;
+}
+
+.bankruptcy-registry__item .bankruptcy-registry__item-title-number::before {
+  content: counter(num-counter) ". ";
+}
+
+.taxi-usage__list {
+  counter-reset: new-counter;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.taxi-usage__item {
+  counter-increment: new-counter;
+}
+
+.taxi-usage__item .taxi-usage__item-title-number::before {
+  content: counter(new-counter) ". ";
+}
+.car-mileage__table-head {
+  padding: 8px 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  border-radius: 12px 12px 0 0;
+}
+.car-mileage__table-content-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.car-mileage__table-wrapper {
+  border: 1px solid #e0e2e7;
+  border-radius: 12px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.car-mileage__table-content-info {
+  padding: 8px 22px 8px 14px;
+}
+.car-mileage__table-content-info .name-span {
+  color: var(--black);
+}
+.car-mileage__table-wrapper {
+  margin-bottom: 16px;
+}
+/* .fines-information__list {
+  counter-reset: fines-counter;
+}
+.fines-information__item {
+  counter-increment: fines-counter;
+}
+.fines-information__item .fines-information__item-title-number::before {
+  content: counter(fines-counter) " ";
+} */
+
+.is-hidden{
+  display: none;
+}

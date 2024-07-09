@@ -1,0 +1,1695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    /> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0"></script>
+   
+   
+    <script defer src="chart.js"></script>
+    <script defer src="./script.js"></script>
+    
+  </head>
+  <body>
+    <header class="header margin-section">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__content-wrapper">
+            <div class="header__img-container">
+              <img src="/img/header-img.png" alt="" />
+            </div>
+            <div class="header__content-info">
+              <span class="header__content-info-date is-hidden"
+                >Отчёт от 28 марта 2024 года</span
+              >
+              <h2 class="header__content-info-vin is-hidden">Z94C241BBLR188524</h2>
+              <span class="header__content-info-car-name is-hidden">KIA RIO 2020</span>
+              <span class="header__content-info-plate-history"
+                >Настоящий и предыдущие госномера:</span
+              >
+              <ol class="header__content-info-list is-hidden">
+                <li class="header__content-info-item">А456УР799</li>
+                <li class="header__content-info-item">
+                  Р822РС190 (СТС: 5056112568)
+                </li>
+              </ol>
+            </div>
+            <div class="header__logo-container">
+              <img class="header__logo" src="/img/header-logo.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="disclaimer margin-section is-hidden">
+      <div class="container">
+        <div class="disclaimer__wrapper">
+          <p class="disclaimer__desk">
+            Данный отчёт носит исключительно ознакомительный характер и
+            предоставляется в информационных целях. Примите во внимание, что вся
+            содержащаяся в отчёте информация может быть актуальна только на день
+            заказа отчёта - проверка производится в режиме реального времени и
+            включает те данные, которые есть в базах на момент запроса. Сведения
+            из отчёта не предназначены для перепродажи или передачи третьим
+            лицам.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="disadvantages margin-section is-hidden">
+      <div class="container">
+        <div class="disadvantages__wrapper">
+          <div class="disadvantages__content">
+            <h3 class="disadvantages__content-title title-h3">Недостатки</h3>
+            <ul class="disadvantages__content-list list-reset">
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Находится в розыске
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Есть записи в реестре банкротов
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Использовался в такси
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Использовался в каршеринге
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Больше 10 владельцев
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Участвовал в ДТП
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Есть ограничения
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-red.svg"
+                  alt=""
+                />Находится в залоге
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-yellow.svg"
+                  alt=""
+                />Среди владельцев есть юр. лица
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-yellow.svg"
+                  alt=""
+                />Пробег могли скрутить
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-yellow.svg"
+                  alt="img/exclamation-yellow.svg"
+                />Есть отрицательная характеристика в выездной диагностике
+              </li>
+              <li class="disadvantages__content-item">
+                <img
+                  class="disadvantages__content-item-status"
+                  src="img/exclamation-yellow.svg"
+                  alt=""
+                />Есть штрафы
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-information margin-section is-hidden">
+      <div class="container">
+        <h3 class="main-information__title title-h3">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_159_48)">
+              <path
+                d="M22.1627 16.2095C22.7155 14.8749 23 13.4445 23 12C23 9.08262 21.8411 6.28473 19.7782 4.22183C17.7153 2.15893 14.9174 1 12 1C9.08262 1 6.28473 2.15893 4.22183 4.22183C2.15893 6.28473 1 9.08262 1 12C1 13.4445 1.28452 14.8749 1.83733 16.2095C2.39013 17.5441 3.20038 18.7567 4.22183 19.7782C5.24327 20.7996 6.4559 21.6099 7.79048 22.1627C9.12506 22.7155 10.5555 23 12 23C13.4445 23 14.8749 22.7155 16.2095 22.1627C17.5441 21.6099 18.7567 20.7996 19.7782 19.7782C20.7996 18.7567 21.6099 17.5441 22.1627 16.2095Z"
+                stroke="#428AED"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.4444 16.7778H12.2222V11.8889H11M12.2222 7H12.2344"
+                stroke="#428AED"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_159_48">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          Основная информация
+        </h3>
+        <div class="main-information__wrapper background-gray">
+          <ul class="main-information__list list-reset">
+            <li class="main-information__item">
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Марка (модель):</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >KIA RIO</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Год выпуска:</span
+                >
+                <span class="main-information__item-desk desk-span">2020</span>
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span">VIN:</span>
+                <span class="main-information__item-desk desk-span"
+                  >Z94C241BBLR188524</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Номер кузова:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >Z94C241BBLR188524</span
+                >
+              </div>
+            </li>
+            <li class="main-information__item">
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span">Цвет:</span>
+                <span class="main-information__item-desk desk-span">Серый</span>
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Номер двигателя:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >G4FGLW422499</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Привод:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >Передний</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Рабочий объём:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >1591 см3</span
+                >
+              </div>
+            </li>
+            <li class="main-information__item">
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Мощность:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >122,6 л.с.</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Категория</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >Легковой седан</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Разрешённая максимальная масса:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >1610 кг</span
+                >
+              </div>
+              <div class="main-information__item-text">
+                <span class="main-information__item-name name-span"
+                  >Масса без нагрузки:</span
+                >
+                <span class="main-information__item-desk desk-span"
+                  >1230 кг</span
+                >
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="registration-history margin-section is-hidden">
+      <div class="container">
+        <h3 class="registration-history__title title-h3 title-h3-flex">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5215 10.3125C16.5215 9.79472 16.1018 9.375 15.584 9.375H5.9278C5.41001 9.375 4.9903 9.79472 4.9903 10.3125C4.9903 10.8303 5.41001 11.25 5.9278 11.25H15.584C16.1018 11.25 16.5215 10.8303 16.5215 10.3125ZM5.9278 13.125C5.41001 13.125 4.9903 13.5447 4.9903 14.0625C4.9903 14.5803 5.41001 15 5.9278 15H11.7924C12.3102 15 12.7299 14.5803 12.7299 14.0625C12.7299 13.5447 12.3102 13.125 11.7924 13.125H5.9278Z" fill="#428AED" />
+            <path d="M8.13091 22.125H4.99548C3.96161 22.125 3.12048 21.2839 3.12048 20.25V3.75C3.12048 2.71613 3.96161 1.875 4.99548 1.875H16.5215C17.5554 1.875 18.3965 2.71613 18.3965 3.75V9.51562C18.3965 10.0334 18.8162 10.4531 19.334 10.4531C19.8518 10.4531 20.2715 10.0334 20.2715 9.51562V3.75C20.2715 1.68225 18.5893 0 16.5215 0H4.99548C2.92773 0 1.24548 1.68225 1.24548 3.75V20.25C1.24548 22.3177 2.92773 24 4.99548 24H8.13091C8.64869 24 9.06841 23.5803 9.06841 23.0625C9.06841 22.5447 8.64869 22.125 8.13091 22.125Z" fill="#428AED" />
+            <path d="M21.9321 13.5737C20.8355 12.4771 19.0512 12.477 17.9554 13.5729L12.8083 18.7086C12.699 18.8176 12.6184 18.952 12.5735 19.0997L11.4526 22.79C11.4038 22.9506 11.399 23.1214 11.4388 23.2845C11.4785 23.4476 11.5613 23.597 11.6786 23.7171C11.7958 23.8373 11.9431 23.9238 12.1052 23.9675C12.2673 24.0113 12.4381 24.0107 12.5999 23.9659L16.3839 22.9177C16.5396 22.8746 16.6815 22.792 16.7959 22.6778L21.9321 17.5512C23.0287 16.4546 23.0287 14.6704 21.9321 13.5737ZM15.6458 21.1766L13.7421 21.704L14.2992 19.8698L17.7721 16.4046L19.0982 17.7307L15.6458 21.1766ZM20.607 16.2248L20.4253 16.4061L19.0995 15.0802L19.2805 14.8996C19.646 14.5341 20.2408 14.5341 20.6063 14.8996C20.9719 15.2651 20.9719 15.8599 20.607 16.2248ZM15.584 5.625H5.9278C5.41001 5.625 4.9903 6.04472 4.9903 6.5625C4.9903 7.08028 5.41001 7.5 5.9278 7.5H15.584C16.1018 7.5 16.5215 7.08028 16.5215 6.5625C16.5215 6.04472 16.1018 5.625 15.584 5.625Z" fill="#428AED" />
+          </svg>История регистрации в ГИБДД</h3>
+        <div class="registration-history__upper-wrapper background-gray">
+          <span class="registration-history__upper-owners ">Количество владельцев: <span class="registration-history__upper-owners-count">5</span></span>
+          <span class="registration-history__upper-time-of-use ">Общий срок эксплуатации: <span class="registration-history__upper-time-of-use-count ">20 дней</span> </span>
+        </div>
+        <ul class="registration-history__list list-reset">
+          
+       
+        
+           <li class="registration-history__item"><span class="registration-history__item-date">19 июля 2019 г.</span>
+            <div class="registration-history__item-line legal-entity">
+              <div class="registration-history__item-line-upper legal-entity-upper"></div>
+              <div class="registration-history__item-line-down legal-entity-down"></div>
+            </div>
+            
+            <div class="registration-history__item-line individual">
+              <div class="registration-history__item-line-upper individual-upper"></div>
+              <div class="registration-history__item-line-down individual-down"></div>
+            </div>
+            <div class="registration-history__item-info">
+            <h4 class="registration-history__item-info-title title-h4">Юридическое лицо</h4>
+            <div class="registration-history__item-info-content">
+      
+            
+        <div class="registration-history__item-info-content-text details-text">
+        <span class="registration-history__item-info-content-text-name name-span">Период владения:</span>
+        <span class="registration-history__item-info-content-text-desk desk-span">19 июля 2019 г. – 17 сентября 2021 г. (2 годa 2 месяцa)</span>
+      </div>  
+        
+        <div class="registration-history__item-info-content-text details-text">
+        <span class="registration-history__item-info-content-text-name name-span">Последнее действие:</span>
+        <span class="registration-history__item-info-content-text-desk desk-span">Изменение данных о собственнике (владельце)</span>
+      </div>  
+        
+        <div class="registration-history__item-info-content-text details-text">
+        <span class="registration-history__item-info-content-text-name name-span">Регион:</span>
+        <span class="registration-history__item-info-content-text-desk desk-span">Центральный, Ярославская область</span>
+      </div>  
+        
+        <div class="registration-history__item-info-content-text details-text">
+        <span class="registration-history__item-info-content-text-name name-span">Госномер:</span>
+        <span class="registration-history__item-info-content-text-desk desk-span">А908ХО76</span>
+      </div>  
+        
+            </div>
+          </div>
+            </li>
+       
+        </ul>
+      </div>
+    </div>
+    <div class="accident-history margin-section is-hidden">
+      <div class="container">
+        <h3 class="accident-history__title title-h3 title-h3-flex">
+          <svg
+            width="24"
+            height="21"
+            viewBox="0 0 24 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.55289 15.6833C8.58373 15.7368 8.62812 15.7813 8.68159 15.8122C8.73506 15.8431 8.79573 15.8593 8.85749 15.8593H15.5024C15.5642 15.8593 15.6249 15.8431 15.6783 15.8122C15.7318 15.7813 15.7762 15.7368 15.807 15.6833C15.8379 15.6298 15.8541 15.5691 15.854 15.5074C15.854 15.4456 15.8376 15.385 15.8067 15.3315L12.484 9.59589C12.4531 9.54257 12.4088 9.49831 12.3554 9.46755C12.302 9.43678 12.2414 9.42059 12.1798 9.42059C12.1182 9.4206 12.0577 9.4368 12.0043 9.46757C11.9509 9.49835 11.9065 9.54261 11.8757 9.59594L8.55327 15.3316C8.52232 15.385 8.50599 15.4456 8.50592 15.5074C8.50585 15.5691 8.52206 15.6298 8.55289 15.6833ZM12.1799 10.4735L14.8925 15.1562H9.46737L12.1799 10.4735Z"
+              fill="#428AED"
+              stroke="#428AED"
+              stroke-width="0.25"
+            />
+            <path
+              d="M2.75791 20.7811H21.6015C22.5708 20.7811 23.3593 19.9926 23.3593 19.0233C23.3593 18.7144 23.2778 18.4109 23.1231 18.1435L13.7016 1.87782C13.3962 1.35381 12.8286 1 12.1797 1C11.5548 1 10.9718 1.33642 10.6581 1.87796C10.6501 1.89306 10.6405 1.90824 10.6311 1.92446L1.23598 18.1433C1.23228 18.1497 1.22923 18.1563 1.226 18.1628C1.07765 18.4253 0.999817 18.7218 1.00006 19.0233C1.00011 19.9926 1.78863 20.7811 2.75791 20.7811ZM1.70323 19.0233C1.70323 18.4418 2.17633 17.9687 2.75791 17.9687H18.9593L20.0799 19.9032C20.1152 19.9637 20.1542 20.0221 20.1965 20.078H2.75791C2.17633 20.078 1.70323 19.6049 1.70323 19.0233ZM22.6562 19.0233C22.6562 19.6049 22.183 20.078 21.6015 20.078C21.2267 20.078 20.8767 19.8759 20.6884 19.5507L12.586 5.56376L13.7019 3.6374C13.7374 3.5754 13.7692 3.5113 13.797 3.44545L22.5146 18.496C22.6073 18.6558 22.6562 18.8381 22.6562 19.0233ZM11.2652 2.23276L11.2665 2.23041C11.4549 1.9052 11.8048 1.70317 12.1797 1.70317C12.7612 1.70317 13.2343 2.17632 13.2343 2.75785C13.2343 2.94291 13.1854 3.12558 13.0931 3.28547L8.73695 10.8059C8.71323 10.8459 8.69767 10.8902 8.69117 10.9362C8.68468 10.9822 8.68737 11.0291 8.6991 11.0741C8.71083 11.119 8.73136 11.1613 8.7595 11.1982C8.78765 11.2352 8.82285 11.2663 8.86307 11.2896C8.90329 11.3129 8.94773 11.328 8.99382 11.334C9.03991 11.34 9.08674 11.3368 9.13159 11.3246C9.17644 11.3124 9.21842 11.2914 9.25511 11.2629C9.2918 11.2343 9.32247 11.1988 9.34534 11.1583L12.1797 6.26524L18.5519 17.2656H5.80776L8.64058 12.3752C8.6856 12.2946 8.69712 12.1995 8.67267 12.1105C8.64822 12.0215 8.58976 11.9457 8.5099 11.8994C8.43004 11.8532 8.33518 11.8402 8.24581 11.8632C8.15644 11.8863 8.07971 11.9435 8.03219 12.0227L4.99523 17.2655H2.75791C2.68741 17.2655 2.61799 17.2702 2.54964 17.2783C4.725 13.5228 11.1851 2.37038 11.2652 2.23276Z"
+              fill="#428AED"
+              stroke="#428AED"
+              stroke-width="0.25"
+            />
+          </svg>
+          Данные об участии в ДТП
+        </h3>
+        <div class="accident-history__wrapper-upper background-gray">
+          <span class="accident-history__count-label"
+            >Общее количество ДТП:
+            <span class="accident-history__count">1</span></span
+          >
+        </div>
+        <div class="accident-history__wrapper ">
+          <ul class="accident-history__list list-reset">
+            <li class="accident-history__item background-gray">
+              <h4 class="accident-history__item-title title-h4">№<span class="accident-history__item-title-number"></span>
+                Москва, 15 января 2021
+              </h4>
+              <div class="accident-history__item-content details-list">
+               
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Номер происшествия:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >450006348</span
+                    >
+                  </div>
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Состояние ТС:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >Повреждено</span
+                    >
+                  </div>
+                  <div class="accident-history__item-info-item-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Тип происшествия:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >Наезд на препятствие</span
+                    >
+               
+                
+                  </div>
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Марка (модель):
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >HYUNDAI Solaris</span
+                    >
+                  </div>
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Год выпуска:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >2019</span
+                    >
+                  </div>
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Номер ТС/Всего ТС в ДТП:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >Место происшествия:
+                    </span>
+                  </div>
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >Место происшествия:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >Матушкино, Зеленоградский АО, Москва, ЦФО</span
+                    >
+                  </div>
+                  <div class="accident-history__item-info-item-text details-text">
+                    <span
+                      class="accident-history__item-info-item-name name-span"
+                      >ОПФ собственника:
+                    </span>
+                    <span
+                      class="accident-history__item-info-item-desk desk-span"
+                      >Юридические лица, являющиеся коммерческими
+                      организациями</span
+                    >
+              </div>
+            </div>
+              <div class="accident-history__middle-line"></div>
+              <div class="accident-history__item-info-damage">
+                <h4 class="accident-history__item-info-damage-title title-h4">
+                  Карта повреждений
+                </h4>
+
+                <div class="accident-history__item-info-damage-content">
+                  <div class="accident-history__item-info-damage-content-text">
+                    <span class="accident-history__item-info-damage-label"
+                      >Описание повреждений:
+                    </span>
+                    <ul
+                      class="accident-history__item-info-damage-list list-reset"
+                    >
+                      <li class="accident-history__item-info-damage-item">
+                        <span
+                          class="accident-history__item-info-damage-item-desk"
+                          >Передний бампер</span
+                        >
+                      </li>
+                      <li class="accident-history__item-info-damage-item">
+                        <span
+                          class="accident-history__item-info-damage-item-desk"
+                          >Капот</span
+                        >
+                      </li>
+                      <li class="accident-history__item-info-damage-item">
+                        <span
+                          class="accident-history__item-info-damage-item-desk"
+                          >Передняя левая дверь</span
+                        >
+                      </li>
+                      <li class="accident-history__item-info-damage-item">
+                        <span
+                          class="accident-history__item-info-damage-item-desk"
+                          >Передние фары</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <img src="/img/damage-img.png" alt="" />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="car-mileage margin-section is-hidden">
+      <div class="container">
+        <h3 class="car-mileage_title title-h3 title-h3-flex">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_59_446)">
+              <mask id="mask0_59_446" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <path d="M22.9999 23V1.00007H1V23H22.9999Z" fill="white" stroke="white" stroke-width="2" />
+              </mask>
+              <g mask="url(#mask0_59_446)">
+                <path d="M23.2968 14.636H21.0374" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21.7833 8.98763L19.8266 10.1173" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21.7833 20.2844L19.8266 19.1547" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <path d="M17.6484 4.85248L16.5187 6.80908" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12 3.33914V5.59851" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M14.2593 20.661H9.7406" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <mask id="mask1_59_446" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <path d="M22.9999 23V1.00007H1V23H22.9999Z" fill="white" stroke="white" stroke-width="2" />
+              </mask>
+              <g mask="url(#mask1_59_446)">
+                <path d="M0.703125 14.636H2.96249" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.21661 8.98763L4.17331 10.1173" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.21661 20.2844L4.17331 19.1547" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <path d="M6.35156 4.85248L7.48125 6.80908" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <mask id="mask2_59_446" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                <path d="M22.9999 23V1.00007H1V23H22.9999Z" fill="white" stroke="white" stroke-width="2" />
+              </mask>
+              <g mask="url(#mask2_59_446)">
+                <path d="M10.9349 13.5711C11.5227 12.9829 12.4772 12.9829 13.065 13.5711C13.6528 14.1589 13.6528 15.1131 13.065 15.701C12.4772 16.2888 11.5227 16.2888 10.9349 15.701C10.347 15.1131 10.347 14.1589 10.9349 13.5711Z" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M7.20709 9.84313L10.9349 13.571" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M13.0651 15.7009L14.2594 16.8954" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M2.21653 20.2844C1.25409 18.6223 0.703125 16.6932 0.703125 14.636C0.703125 8.4009 5.76505 3.33916 12 3.33916C18.2349 3.33916 23.2968 8.4009 23.2968 14.636C23.2968 16.6932 22.7458 18.6223 21.7834 20.2844" stroke="#428AED" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+            </g>
+            <defs>
+              <clipPath id="clip0_59_446">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>Пробег автомобиля</h3>
+          <div class="car-mileage__table-wrapper background-gray">
+        <div class="car-mileage__table">
+          <div class="car-mileage__table-head background-gray">
+            <span class="car-mileage__table-head-name desk-span">Дата</span>
+            <span class="car-mileage__table-head-name desk-span">Источник</span>
+            <span class="car-mileage__table-head-name desk-span">Пробег</span>
+          </div>
+          <div class="car-mileage__table-list">
+          <div class="car-mileage__table-content">
+            <div class="car-mileage__table-content-info">
+              <span class="car-mileage__table-content-info-date name-span">13.02.2024</span>
+              <span class="car-mileage__table-content-info-source name-span">из техосмотра</span>
+              <span class="car-mileage__table-content-info-count name-span">150 000 км</span>
+            </div>
+            <div class="car-mileage__table-content-info">
+              <span class="car-mileage__table-content-info-date name-span">08.03.2023</span>
+              <span class="car-mileage__table-content-info-source name-span">из техосмотра</span>
+              <span class="car-mileage__table-content-info-count name-span">125 026 км</span>
+            </div>
+            <div class="car-mileage__table-content-info">
+              <span class="car-mileage__table-content-info-date name-span">12.03.2022</span>
+              <span class="car-mileage__table-content-info-source name-span">из техосмотра</span>
+              <span class="car-mileage__table-content-info-count name-span">56 457 км</span>
+            </div>
+            <div class="car-mileage__table-content-info">
+              <span class="car-mileage__table-content-info-date name-span">21.05.2021</span>
+              <span class="car-mileage__table-content-info-source name-span">из истории обслуживания</span>
+              <span class="car-mileage__table-content-info-count name-span">11 877 км</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chart-container">
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+    
+      </div>
+      <div class="owners-block">
+          <div class="owner old">
+              <span class="desk-span">1 Владелец</span>
+          </div>
+          <div class="owner actual">
+            <span class="desk-span">2 Владелец</span>
+
+          </div>
+      </div>
+  </div>
+    </div>
+    </div>
+    <div class="inspection-history margin-section is-hidden">
+      <div class="container">
+        <h3 class="inspection-history__title title-h3 title-h3-flex">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8.85714 3.44444H6.42857C5.78447 3.44444 5.16676 3.70198 4.71131 4.16041C4.25587 4.61883 4 5.24058 4 5.88889V20.5556C4 21.2039 4.25587 21.8256 4.71131 22.284C5.16676 22.7425 5.78447 23 6.42857 23H18.5714C19.2155 23 19.8332 22.7425 20.2887 22.284C20.7441 21.8256 21 21.2039 21 20.5556V5.88889C21 5.24058 20.7441 4.61883 20.2887 4.16041C19.8332 3.70198 19.2155 3.44444 18.5714 3.44444H16.1429M8.85714 3.44444C8.85714 4.09275 9.11301 4.71451 9.56846 5.17293C10.0239 5.63135 10.6416 5.88889 11.2857 5.88889H13.7143C14.3584 5.88889 14.9761 5.63135 15.4315 5.17293C15.887 4.71451 16.1429 4.09275 16.1429 3.44444M8.85714 3.44444C8.85714 2.79614 9.11301 2.17438 9.56846 1.71596C10.0239 1.25754 10.6416 1 11.2857 1H13.7143C14.3584 1 14.9761 1.25754 15.4315 1.71596C15.887 2.17438 16.1429 2.79614 16.1429 3.44444M8.85714 14.4444L11.2857 16.8889L16.1429 12"
+              stroke="#428AED"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Пройденные Техосмотры (ЕАИСТО)
+        </h3>
+
+        <ul class="inspection-history__list list-reset">
+          <li class="inspection-history__item">
+            <div class="inspection-history__item-wrapper background-gray">
+              <h4 class="inspection-history__item-title title-h4">
+                ДК №132251012200880 (26.05.2021 – 26.05.2023)
+              </h4>
+              <div
+                class="inspection-history__item-content-list list-reset details-list"
+              >
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Номер диагностической карты:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >132251012200880</span
+                  >
+                </div>
+
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Марка (модель):
+                  </span>
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >DATSUN MI-DO</span
+                  >
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Пробег:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >66 996</span
+                  >
+                </div>
+
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >VIN:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >Z8NFAABD0H0012881</span
+                  >
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Госномер:
+                  </span>
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >А847НВ790
+                  </span>
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Год выпуска:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >2016</span
+                  >
+                </div>
+
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Номер кузова:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >Z8NFAABD0H0012881</span
+                  >
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Дата начала действия ТО:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >26.05.2021</span
+                  >
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Дата окончания действия ТО:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >26.05.2023</span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="inspection-history__item">
+            <div class="inspection-history__item-wrapper background-gray">
+              <h4 class="inspection-history__item-title title-h4">
+                ДК №084200011906107 (29.04.2019 – 30.04.2021)
+              </h4>
+              <div class="inspection-history__item-content-list details-list">
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Номер диагностической карты:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >084200011906107</span
+                  >
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Пробег:
+                  </span>
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >36 000</span
+                  >
+                </div>
+
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Дата окончания действия ТО:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >26.05.2023</span
+                  >
+                </div>
+                <div
+                  class="inspection-history__item-content-item-text details-text"
+                >
+                  <span
+                    class="inspection-history__item-content-item-name name-span"
+                    >Дата начала действия ТО:</span
+                  >
+                  <span
+                    class="inspection-history__item-content-item-name desk-span"
+                    >26.05.2021</span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="service-maintenance margin-section is-hidden">
+      <div class="container">
+        <h3 class="service-maintenance__title title-h3 title-h3-flex">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.183 24C3.35548 23.9992 2.54675 23.7532 1.85893 23.293C1.17111 22.8327 0.635063 22.1789 0.318487 21.4141C0.00191089 20.6493 -0.0809929 19.8078 0.0802466 18.9959C0.241486 18.184 0.639636 17.4381 1.22441 16.8525L7.27555 10.7994L7.06343 9.36992C6.87818 8.10772 6.98959 6.81969 7.38881 5.60808C7.78804 4.39646 8.46409 3.2946 9.36331 2.38995C10.1142 1.63479 11.0066 1.03504 11.9893 0.624963C12.972 0.214887 14.0259 0.00252208 15.0907 2.31876e-06H17.078C17.355 -0.000502699 17.626 0.0814963 17.8563 0.235555C18.0866 0.389613 18.2658 0.608758 18.3712 0.865077C18.4766 1.1214 18.5033 1.40329 18.4479 1.67485C18.3926 1.94641 18.2577 2.19534 18.0604 2.38995L14.2868 6.15355C14.1569 6.28323 14.0538 6.43727 13.9834 6.60687C13.9131 6.77647 13.8768 6.95829 13.8768 7.14191C13.8768 7.32554 13.9131 7.50735 13.9834 7.67695C14.0538 7.84655 14.1569 8.0006 14.2868 8.13028L15.861 9.7608C16.1257 10.018 16.4801 10.1619 16.8491 10.1619C17.2181 10.1619 17.5725 10.018 17.8371 9.7608L21.6107 5.98603C21.8059 5.788 22.0558 5.65281 22.3284 5.5978C22.6009 5.54278 22.8836 5.57044 23.1403 5.67723C23.397 5.78403 23.616 5.96509 23.7692 6.1972C23.9223 6.42931 24.0027 6.70188 23.9999 6.97998V8.90087C23.9974 9.966 23.7851 11.0202 23.3752 12.0032C22.9652 12.9863 22.3657 13.8789 21.6107 14.63C20.7064 15.5295 19.6049 16.2058 18.3936 16.6051C17.1824 17.0045 15.8948 17.1159 14.6329 16.9306L13.2039 16.7184L7.14158 22.7715C6.75504 23.163 6.29423 23.4733 5.78618 23.6843C5.27813 23.8952 4.73307 24.0026 4.183 24ZM16.3969 1.66403H15.0907C14.2457 1.66635 13.4095 1.83523 12.6298 2.16099C11.8502 2.48676 11.1423 2.96303 10.5467 3.56258C9.8253 4.2846 9.28369 5.16619 8.96563 6.13618C8.64757 7.10617 8.56198 8.13738 8.71577 9.14656L8.99488 10.9893C9.01088 11.1183 8.99816 11.2493 8.95762 11.3729C8.91709 11.4965 8.84975 11.6095 8.76043 11.704L2.40785 18.0363C1.93743 18.5074 1.6732 19.1461 1.6732 19.812C1.6732 20.4779 1.93743 21.1165 2.40785 21.5877C2.88574 22.045 3.52161 22.3003 4.183 22.3003C4.84438 22.3003 5.48026 22.045 5.95815 21.5877L12.3107 15.2331C12.4043 15.1424 12.5172 15.0742 12.641 15.0335C12.7648 14.9929 12.8962 14.981 13.0253 14.9986L14.8674 15.2778C15.8763 15.4316 16.9072 15.346 17.8768 15.0278C18.8465 14.7097 19.7278 14.1679 20.4496 13.4462C21.049 12.8505 21.5251 12.1424 21.8508 11.3625C22.1764 10.5826 22.3453 9.74608 22.3476 8.90087V7.59422L19.0206 10.8776C18.4351 11.4354 17.6576 11.7466 16.8491 11.7466C16.0406 11.7466 15.263 11.4354 14.6776 10.8776L13.1146 9.31408C12.828 9.02963 12.6005 8.69124 12.4453 8.31843C12.2901 7.94563 12.2102 7.54577 12.2102 7.14191C12.2102 6.73806 12.2901 6.3382 12.4453 5.96539C12.6005 5.59259 12.828 5.2542 13.1146 4.96975L16.3969 1.66403Z"
+              fill="#428AED"
+            />
+            <path
+              d="M5.67999 19.3201C6.23228 19.3201 6.67999 18.8724 6.67999 18.3201C6.67999 17.7678 6.23228 17.3201 5.67999 17.3201C5.12771 17.3201 4.67999 17.7678 4.67999 18.3201C4.67999 18.8724 5.12771 19.3201 5.67999 19.3201Z"
+              fill="#428AED"
+            />
+          </svg>
+          Сервисное обслуживание
+        </h3>
+        <ul class="service-maintenance__list list-reset">
+          <li class="service-maintenance__item">
+            <div
+              class="service-maintenance__item-wrapper wrapper-item background-gray"
+            >
+              <h4 class="service-maintenance__item-title title-h4">
+                Техническое обслуживание 01.07.2023
+              </h4>
+              <div
+                class="service-maintenance__item-details item-details list-reset"
+              >
+                
+                  <div
+                    class="service-maintenance__item-details-item-text details-text"
+                  >
+                    <span
+                      class="service-maintenance__item-details-item-name name-span"
+                      >Пробег:
+                    </span>
+                    <span
+                      class="service-maintenance__item-details-item-name desk-span"
+                      >68 000 км</span
+                    >
+                  </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li class="service-maintenance__item">
+            <div
+              class="service-maintenance__item-wrapper wrapper-item background-gray"
+            >
+              <h4 class="service-maintenance__item-title title-h4">
+                Слесарный ремонт 06.06.2022
+              </h4>
+              <div
+                class="service-maintenance__item-details item-details list-reset"
+              >
+                <div
+                  class="service-maintenance__item-details-item-text details-text"
+                >
+                  <span
+                    class="service-maintenance__item-details-item-name name-span"
+                    >Описание:
+                  </span>
+                  <span
+                    class="service-maintenance__item-details-item-name desk-span"
+                    >Установка доп. оборудования</span
+                  >
+                </div>
+                <div
+                  class="service-maintenance__item-details-item-text details-text"
+                >
+                  <span
+                    class="service-maintenance__item-details-item-name name-span"
+                    >Адрес:
+                  </span>
+                  <span
+                    class="service-maintenance__item-details-item-name desk-span"
+                    >Самара, Московское шоссе 17 км, строение 12</span
+                  >
+                </div>
+
+                <div
+                  class="service-maintenance__item-details-item-text details-text"
+                >
+                  <span
+                    class="service-maintenance__item-details-item-name name-span"
+                    >Количество услуг заказ-наряда:
+                  </span>
+                  <span
+                    class="service-maintenance__item-details-item-name desk-span"
+                    >1</span
+                  >
+                </div>
+                <div
+                  class="service-maintenance__item-details-item-text details-text"
+                >
+                  <span
+                    class="service-maintenance__item-details-item-name name-span"
+                    >Количество товаров заказ-наряда:
+                  </span>
+                  <span
+                    class="service-maintenance__item-details-item-name desk-span"
+                    >2</span
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="deposit margin-section is-hidden">
+      <div class="container">
+        <h3 class="deposit__title title-h3 title-h3-flex">
+          <svg
+            width="22"
+            height="24"
+            viewBox="0 0 22 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.6338 22.5H20.5213V13.305H20.6338C21.0463 13.305 21.3838 12.9675 21.3838 12.555C21.3838 12.1425 21.0463 11.805 20.6338 11.805H13.4713C13.0588 11.805 12.7213 12.1425 12.7213 12.555C12.7213 12.9675 13.0588 13.305 13.4713 13.305H13.5838V16.1025H3.97627C2.78377 16.1025 1.81252 17.0737 1.81252 18.2663C1.81252 18.8438 2.03752 19.3875 2.45002 19.7962C2.65099 19.9968 2.88961 20.1558 3.15218 20.2639C3.41474 20.372 3.69607 20.4272 3.98002 20.4263H13.5875V22.5H13.475C13.0625 22.5 12.725 22.8375 12.725 23.25C12.725 23.6625 13.0625 24 13.475 24H20.6338C21.0463 24 21.3838 23.6625 21.3838 23.25C21.3838 22.8375 21.0463 22.5 20.6338 22.5ZM3.97627 18.9263C3.88931 18.9266 3.80313 18.9099 3.72267 18.8769C3.6422 18.8439 3.56904 18.7954 3.50738 18.7341C3.44571 18.6727 3.39676 18.5998 3.36332 18.5196C3.32988 18.4393 3.31262 18.3532 3.31252 18.2663C3.31252 17.9025 3.60877 17.6025 3.97627 17.6025H13.5838V18.9263H3.97627ZM15.0838 22.5V13.305H19.0213V22.5H15.0838ZM7.38127 13.5C11.1088 13.5 14.1425 10.47 14.1425 6.75C14.1425 3.02625 11.1088 0 7.38127 0C3.65377 0 0.616272 3.03 0.616272 6.75C0.616272 10.4738 3.65002 13.5 7.38127 13.5ZM7.38127 1.5C10.2838 1.5 12.6425 3.855 12.6425 6.75C12.6425 9.645 10.28 12 7.38127 12C4.48252 12 2.11627 9.645 2.11627 6.75C2.11627 3.855 4.47877 1.5 7.38127 1.5Z"
+              fill="#428AED"
+            />
+            <path
+              d="M8.31877 8.57634H5.15002C4.73752 8.57634 4.40002 8.91384 4.40002 9.32634C4.40002 9.73884 4.73752 10.0763 5.15002 10.0763H6.62752V10.4101C6.62752 10.8226 6.96502 11.1601 7.37752 11.1601C7.79002 11.1601 8.12752 10.8226 8.12752 10.4101V10.0763H8.31502C9.44002 10.0763 10.355 9.16134 10.355 8.03634C10.355 6.91134 9.44378 6.00009 8.31877 6.00009H6.44377C6.30056 6.00009 6.16321 5.94319 6.06194 5.84193C5.96067 5.74066 5.90377 5.6033 5.90377 5.46009C5.90377 5.31687 5.96067 5.17952 6.06194 5.07825C6.16321 4.97698 6.30056 4.92009 6.44377 4.92009H9.60878C10.0213 4.92009 10.3588 4.58259 10.3588 4.17009C10.3588 3.75759 10.0213 3.42009 9.60878 3.42009H8.13127V3.09009C8.13127 2.67759 7.79378 2.34009 7.38127 2.34009C6.96877 2.34009 6.63127 2.67759 6.63127 3.09009V3.42384H6.44377C5.31877 3.42384 4.40377 4.33884 4.40377 5.46384C4.40377 6.58884 5.31877 7.50009 6.44377 7.50009H8.31877C8.61503 7.50009 8.85878 7.74009 8.85878 8.04009C8.85878 8.34009 8.61503 8.57634 8.31877 8.57634Z"
+              fill="#428AED"
+            />
+          </svg>
+          Информация о нахождении в залоге
+        </h3>
+        <div class="deposit__list">
+        <div class="deposit__wrapper background-gray">
+          <div class="deposit__content">
+            <div class="deposit__content-text details-text">
+              <span class="deposit__content-text-name name-span"
+                >Дата регистрации:
+              </span>
+              <span class="deposit__content-text-name desk-span"
+                >03.02.2022</span
+              >
+            </div>
+            <div class="deposit__content-text details-text">
+              <span class="deposit__content-text-name name-span"
+                >Регистрационный номер:
+              </span>
+              <span class="deposit__content-text-name desk-span"
+                >2022-006-870162-290</span
+              >
+            </div>
+            <div class="deposit__content-text details-text">
+              <span class="deposit__content-text-name name-span"
+                >Залогодатель:
+              </span>
+              <span class="deposit__content-text-name desk-span"
+                >Гузель Фаритовна Доломанова (13.04.1988)</span
+              >
+            </div>
+            <div class="deposit__content-text details-text">
+              <span class="deposit__content-text-name name-span"
+                >Залогодержатель:
+              </span>
+              <span class="deposit__content-text-name desk-span"
+                >АКЦИОНЕРНОЕ ОБЩЕСТВО ЭКСПОБАНК</span
+              >
+            </div>
+            <div class="deposit__content-text details-text">
+              <span class="deposit__content-text-name name-span">VIN: </span>
+              <span class="deposit__content-text-name desk-span"
+                >Z94C241BBKR127310</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="wanted margin-section is-hidden">
+      <div class="container">
+        <h3 class="wanted__title title-h3 title-h3-flex">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_59_694)">
+              <path
+                d="M23.7114 6.87348L17.0193 0.18137C16.9618 0.123871 16.8936 0.0782579 16.8185 0.0471377C16.7434 0.0160176 16.6629 0 16.5816 0C16.5003 0 16.4198 0.0160176 16.3447 0.0471377C16.2696 0.0782579 16.2013 0.123871 16.1439 0.18137L16.1155 0.209726C15.9131 0.410972 15.7526 0.650364 15.6434 0.914043C15.5342 1.17772 15.4783 1.46045 15.479 1.74587C15.479 2.11969 15.574 2.4784 15.7505 2.7965L8.74831 8.80597C8.21241 8.32703 7.52841 8.0649 6.80393 8.0649C6.41999 8.06383 6.03965 8.13893 5.68494 8.28586C5.33022 8.4328 5.00818 8.64863 4.73746 8.92088L4.69548 8.96286C4.63798 9.02033 4.59237 9.08856 4.56125 9.16367C4.53013 9.23877 4.51411 9.31927 4.51411 9.40057C4.51411 9.48186 4.53013 9.56236 4.56125 9.63747C4.59237 9.71257 4.63798 9.78081 4.69548 9.83828L8.7046 13.8474L4.79999 17.7519C4.72185 17.8323 2.87368 19.7368 1.65861 21.2524C0.501491 22.6953 0.272667 22.9596 0.26078 22.9732C0.157277 23.0912 0.102481 23.2441 0.107494 23.4009C0.112506 23.5578 0.176951 23.7068 0.287773 23.818C0.345253 23.8758 0.413614 23.9216 0.48891 23.9529C0.564206 23.9842 0.644948 24.0002 0.726476 24.0001C0.87172 24.0001 1.01733 23.9493 1.13447 23.8469C1.14475 23.838 1.40304 23.6135 2.85535 22.4491C4.37069 21.234 6.27521 19.3857 6.36176 19.3014L10.2601 15.4031L14.0545 19.1975C14.1753 19.3185 14.3338 19.3789 14.4922 19.3789C14.6506 19.3789 14.8092 19.3185 14.9299 19.1975L14.9719 19.1555C15.2441 18.8848 15.4599 18.5628 15.6069 18.2081C15.7538 17.8533 15.8289 17.473 15.8279 17.0891C15.8298 16.3716 15.5657 15.6789 15.0868 15.1447L21.0963 8.14253C21.4176 8.32099 21.7793 8.41441 22.1469 8.41395C22.7272 8.41395 23.2728 8.18797 23.683 7.7775L23.7114 7.74915C23.7689 7.69166 23.8145 7.6234 23.8456 7.54827C23.8768 7.47315 23.8928 7.39263 23.8928 7.31131C23.8928 7.23 23.8768 7.14948 23.8456 7.07435C23.8145 6.99923 23.7689 6.93097 23.7114 6.87348Z"
+                fill="#428AED"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_59_694">
+                <rect width="24" height="24" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          Нахождении в розыске
+        </h3>
+        <div class="wanted__list">
+        <div class="wanted__wrapper background-gray">
+          <div class="wanted__content details-list">
+            <div class="wanted__content-text details-text">
+              <span class="wanted__content-text-name name-span"
+                >Дата постановки на учёт в розыске:
+              </span>
+              <span class="wanted__content-text-name desk-span"
+                >20.12.2016</span
+              >
+            </div>
+            <div class="wanted__content-text details-text">
+              <span class="wanted__content-text-name name-span"
+                >Регион инициатора розыска:
+              </span>
+              <span class="wanted__content-text-name desk-span"
+                >Новосибирская область</span
+              >
+            </div>
+            <div class="wanted__content-text details-text">
+              <span class="wanted__content-text-name name-span">VIN: </span>
+              <span class="wanted__content-text-name desk-span"
+                >JTNBV58E90J105675</span
+              >
+            </div>
+            <div class="wanted__content-text details-text">
+              <span class="wanted__content-text-name name-span"
+                >Госномер:
+              </span>
+              <span class="wanted__content-text-name desk-span">A912BM154</span>
+            </div>
+            <div class="wanted__content-text details-text">
+              <span class="wanted__content-text-name name-span"
+                >Марка (модель):
+              </span>
+              <span class="wanted__content-text-name desk-span"
+                >ТОЙОТАКОРОЛЛА</span
+              >
+            </div>
+            <div class="wanted__content-text details-text">
+              <span class="wanted__content-text-name name-span"
+                >Год выпуска:
+              </span>
+              <span class="wanted__content-text-name desk-span">2011</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="bankruptcy-registry margin-section is-hidden">
+      <div class="container">
+        <h3 class="bankruptcy-registry__title title-h3 title-h3-flex">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 14V17M12 14V17M16 14V17M3 21H21M3 10H21M3 7L12 3L21 7H3ZM4 10H20V21H4V10Z"
+              stroke="#428AED"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          Записи в реестре банкротов
+        </h3>
+        <ul class="bankruptcy-registry__list list-reset">
+          <li class="bankruptcy-registry__item">
+            <div class="bankruptcy-registry__item-wrapper background-gray">
+              <h4 class="bankruptcy-registry__item-title title-h4">
+               <span class="bankruptcy-registry__item-title-number"></span> Daewoo Nexia, 2012 г/в-VIN: XWB3K32EDCA249307 на ГЕВЕЯ.РУ
+              </h4>
+              <div class="bankruptcy-registry__item-content details-list">
+                <div class="bankruptcy-registry__item-content-text details-text">
+                  <span
+                    class="bankruptcy-registry__item-content-text-name name-span"
+                    >VIN:
+                  </span>
+
+                  <span
+                    class="bankruptcy-registry__item-content-text-desk desk-span"
+                    >XWB3K32EDCA249307</span
+                  >
+                </div>
+                <div class="bankruptcy-registry__item-content-text details-text">
+                  <span
+                    class="bankruptcy-registry__item-content-text-name name-span"
+                    >Госномер:
+                  </span>
+                  <span
+                    class="bankruptcy-registry__item-content-text-desk desk-span"
+                    >К550ЕХ164</span
+                  >
+                </div>
+                <div class="bankruptcy-registry__item-content-text details-text">
+                  <span
+                    class="bankruptcy-registry__item-content-text-name name-span"
+                    >Описание:</span
+                  >
+                  <p
+                    class="bankruptcy-registry__item-content-text-desk desk-span"
+                  >
+                    Daewoo Nexia, Легковой автомобиль, марка: ДЭУ , модель:
+                    NEXIA, год изготовления: 2012, цвет: Серебристый, VIN:
+                    XWB3K32EDCA249307, ПТС: 02 УР 005655, г/н: К550ЕХ164,
+                    изготовитель (страна): Узбекистан, модель двигателя: F16D3
+                    тип двигателя: Бензиновый, двигатель №: 2017042, мощность
+                    двигателя, л. с. (кВт): 108.8 (80) , рабочий объем
+                    двигателя, куб. см: 1598, шасси (рама) № Отсутствует, кузов
+                    №: XWB3K32EDCA249307, экологический класс: Четвертый,
+                    разрешенная максимальная масса 1460 кг, масса без нагрузки
+                    980 кг, организация-изготовитель ТС: ЗАО ДЖЕНЕРАЛ МОТОРС
+                    УЗБЕКИСТАН (Узбекистан). Автомобиль находится в общей
+                    совместной собственности с супругой Сисиной Галиной
+                    Владимировной. У транспортного средства имеются небольшие
+                    коррозии с левой стороны, на заднем и переднем крыле,
+                    имеется средняя коррозия с правой стороны , небольшой дефект
+                    переднего крыла с правой стороны. Спущено заднее колесо,
+                    резина летняя, аккумулятор разряжен, один экземпляр ключа.
+                    Ограничения и обременения, имеющиеся на транспортном
+                    средстве: Транспортное средство находится в Залоге АО
+                    «Тинькофф Банк», Запрет на регистрационные действия.
+                    Основание: НЕ РЕГИСТРИРОВАТЬ БЕЗ СОГЛАСИЯ ФИН.УПРАВЛЯЮЩЕГО,
+                    общая совместная собственность с супругой Сисина Антона
+                    Петровича.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="taxi-usage margin-section is-hidden">
+        <div class="container">
+          <h3 class="taxi-usage__title title-h3 title-h3-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_70_64" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <path d="M23.4999 23.5V0.500071H0.5V23.5H23.4999Z" fill="white" stroke="white" />
+            </mask>
+            <g mask="url(#mask0_70_64)">
+              <path d="M6.63417 6.89329H4.05816C3.51133 6.89329 3.03757 7.2723 2.91751 7.8058L1.029 16.1992C0.864537 16.9302 1.42039 17.625 2.16965 17.625H21.8304C22.5796 17.625 23.1355 16.9302 22.971 16.1992L21.0825 7.8058C20.9625 7.2723 20.4887 6.89329 19.9419 6.89329H10.3456" stroke="#428AED" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M6.29358 14.0215V10.381" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M18.8474 14.0215V10.381" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M4.9837 10.3809H7.60331" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M16.636 10.3811L13.9249 14.1372" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M13.9249 10.3811L16.636 14.1372" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.0043 14.1372L10.4967 10.3811L8.98914 14.1372" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M9.42255 13.0576H11.5708" stroke="#428AED" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+            </g>
+          </svg>
+            Использование в качестве такси</h3>
+          <div class="taxi-usage__upper-wrapper background-gray">
+            <span class="taxi-usage__upper-name">Обнаружено <span class="taxi-usage__upper-count">1</span> разрешение</span>
+          </div>
+          <ul class="taxi-usage__list list-reset">
+            <li class="taxi-usage__item">
+              <div class="taxi-usage__item-wrapper background-gray">
+                <h4 class="taxi-usage__item-title title-h4"><span class="taxi-usage__item-title-number"></span>ООО "СК ИДЕАЛ" (Неактивно)</h4>
+                <div class="taxi-usage__item-content details-list">
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Госномер:</span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">Х120ВА799</span>
+                  </div>
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Город регистрации: </span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">Москва</span>
+                  </div>
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Регистрационный номер разрешения:</span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">192589</span>
+                  </div>
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Серия и номер бланка разрешения:
+                    </span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">183128</span>
+                  </div>
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Дата выдачи:</span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">20.12.2017</span>
+                  </div>
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Срок действия:</span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">19.12.2022</span>
+                  </div>
+                  <div class="taxi-usage__item-content-text details-text">
+                    <span class="taxi-usage__item-content-text-name name-span">Перевозчик:</span>
+                    <span class="taxi-usage__item-content-text-desk desk-span">ООО "СК ИДЕАЛ"</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="carprice-inspection-report margin-section is-hidden">
+        <div class="container">
+          <h3 class="carprice-inspection-report__title title-h3 title-h3-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.9617 14.1722C18.9446 14.6963 17.7627 14.5863 17.5428 14.0485C17.3229 13.5102 18.065 13.069 18.6285 12.5032C19.192 11.9379 20.0441 11.6621 20.6626 12.1724C21.2811 12.6828 21.2399 13.5102 19.9617 14.1722ZM16.1684 15.6895C15.6873 16.1999 15.2063 16.1861 14.2305 16.1999C13.7632 16.2136 9.99785 16.1999 9.51682 16.1861C8.58224 16.1449 8.07371 16.1449 7.59268 15.6483C7.11164 15.1517 7.49647 14.738 8.18367 14.738L15.5911 14.7792C16.2783 14.7929 16.6494 15.1929 16.1684 15.6895ZM6.20455 14.048C5.99885 14.5863 4.80314 14.6963 3.79984 14.1722C2.50792 13.5102 2.5629 12.5999 3.08516 12.1724C3.60743 11.745 4.5695 11.9654 5.11925 12.5032C5.669 13.0415 6.39696 13.5514 6.20455 14.048ZM7.01544 7.12388C7.99125 6.54481 9.47559 6.32399 11.922 6.32399C14.3679 6.32399 16.2096 6.62773 17.2404 7.26224C18.2712 7.89674 18.8209 9.0274 18.8897 10.1723C17.7627 10.5585 7.20785 10.586 5.05053 10.1723C5.43536 8.87576 5.94388 7.75839 7.01544 7.12388ZM22.9574 13.5239C22.794 12.7127 22.4767 11.9403 22.0228 11.2484C21.8441 10.9722 21.638 10.7238 21.4048 10.4897C22.119 10.4068 22.2839 9.8415 22.3252 9.38612C22.3664 8.93119 21.6929 8.90325 21.2124 8.93119C20.8275 8.94494 20.4702 9.09612 20.1953 9.35863C19.9342 8.255 19.4119 6.98598 18.0513 6.15861C17.3465 5.74271 16.5743 5.45325 15.7698 5.30328C15.3437 5.22082 14.8765 5.1521 14.3542 5.09666C13.8319 5.04169 12.8291 5 11.922 5C11.0149 5 10.3002 5.02749 9.61302 5.09621C9.14573 5.1379 8.69219 5.22082 8.23864 5.31702C7.51022 5.45492 6.80928 5.71743 6.17706 6.08943C5.02304 6.79311 4.4458 8.07587 3.90979 9.23448C3.66092 9.05336 3.36501 8.94804 3.05768 8.93119C2.5629 8.90371 1.94442 8.93119 1.93068 9.38612C1.91693 9.8415 1.90319 10.3239 2.5354 10.4618C2.3155 10.6964 2.10935 10.9584 1.91693 11.2205C1.40609 11.9255 1.09293 12.7543 1.00984 13.621C0.976049 14.0371 1.02949 14.4556 1.16676 14.8498C1.30402 15.244 1.52208 15.6052 1.80698 15.9103C1.83447 16.7377 1.84822 17.8001 1.86196 18.2C1.90319 18.9308 2.28802 18.917 3.64866 18.8895C4.50078 18.8758 5.47659 19.0829 5.49033 18.0484C5.50408 17.8001 5.49033 17.538 5.47659 17.2897C9.13199 17.938 14.9452 18.0342 18.6285 17.3447C18.6148 17.538 18.6148 17.7584 18.6148 18.0484C18.6423 19.0829 19.6043 18.8758 20.4702 18.8895C21.8166 18.917 22.2152 18.9308 22.2427 18.2C22.2564 17.8138 22.2702 16.7794 22.2977 15.9515C22.5775 15.6192 22.7815 15.2298 22.8954 14.8105C23.0094 14.3913 23.0305 13.9522 22.9574 13.5239Z" fill="#428AED" />
+          </svg>Отчёт о проверке в CarPrice</h3>
+          <div class="carprice-inspection-report__list">
+          <div class="carprice-inspection-report__content background-gray details-list">
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Дата осмотра:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">27.07.2019 10:48:54</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Город:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">Москва и МО</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Марка (модель): </span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">Kia Cerato II</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">VIN:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">KNAFW412BB5455517</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Модификация:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">2.0 AT (150 л.с.)</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Пробег:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">275 936 км</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Год выпуска: </span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">2011</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Мощность: </span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">150 л.с.</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Тип двигателя:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">Бензин инжектор</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Привод:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">Передний</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">КПП:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">Автоматическая</span>
+            </div>
+            <div class="carprice-inspection-report__content-text details-text">
+              <span class="carprice-inspection-report__content-text-name name-span">Руль:</span>
+              <span class="carprice-inspection-report__content-text-desk desk-span">Левый</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="mobile-diagnosis margin-section is-hidden">
+        <div class="container">
+          <h3 class="mobile-diagnosis__title title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.555 19.8681L19.2225 15.664C18.9418 15.3916 18.5714 15.2456 18.1787 15.2507C18.0503 15.2526 17.9227 15.2712 17.7992 15.3061L15.8433 13.4082C17.3912 11.0668 17.7042 8.09049 16.6796 5.47875L17.3508 4.43293C17.5238 4.47495 17.7013 4.49623 17.8794 4.4963C19.119 4.4963 20.1275 3.48779 20.1275 2.24818C20.1275 1.00861 19.119 0.000145638 17.8794 0.000145638C16.6398 0.000145638 15.6313 1.00861 15.6313 2.24818C15.6313 2.76118 15.8044 3.23424 16.0947 3.61299L15.8866 3.93727C15.7189 3.67898 15.5375 3.42979 15.3434 3.19074C13.888 1.40007 11.8225 0.283364 9.52717 0.0462238C7.2318 -0.19087 4.98166 0.480005 3.19099 1.93533C1.40027 3.39061 0.283472 5.45621 0.046378 7.75149C-0.165544 9.80293 0.348441 11.8181 1.49899 13.5017C0.626831 13.8111 0.000346797 14.6439 0.000346797 15.6208C0.000346797 16.8604 1.00882 17.8689 2.24838 17.8689C3.29327 17.8689 4.17391 17.1523 4.42478 16.1848C5.4371 16.7505 6.56341 17.1095 7.7516 17.2322C8.05403 17.2635 8.35558 17.279 8.65553 17.279C10.3308 17.2789 11.9521 16.7957 13.3541 15.8788L15.2925 17.74C15.2085 17.9325 15.1667 18.1409 15.1702 18.351C15.1761 18.7434 15.334 19.1096 15.6146 19.3819L19.9472 23.5861C20.2318 23.8621 20.6005 23.9995 20.9688 23.9995C21.3519 23.9995 21.7346 23.8508 22.0219 23.5548L23.5861 21.9428C24.1495 21.3623 24.1355 20.4316 23.555 19.8681ZM17.8793 1.50015C18.2919 1.50015 18.6275 1.83572 18.6275 2.24822C18.6275 2.66077 18.2919 2.9964 17.8793 2.9964C17.4668 2.9964 17.1312 2.66077 17.1312 2.24822C17.1312 1.83572 17.4668 1.50015 17.8793 1.50015ZM16.6135 16.2456L16.2703 16.5993L14.5455 14.9432C14.6692 14.8275 14.7892 14.709 14.9047 14.5875L16.6135 16.2456ZM1.53841 7.90561C1.73435 6.00886 2.65717 4.30196 4.13697 3.09933C5.42181 2.05505 6.99274 1.49963 8.62596 1.49963C8.87369 1.49963 9.12316 1.51243 9.37296 1.53825C11.2697 1.73424 12.9766 2.65707 14.1793 4.13682C14.4862 4.51413 14.7537 4.92179 14.9778 5.35346L12.3461 9.45432C12.1171 9.37765 11.8771 9.33857 11.6356 9.33858C11.3732 9.33835 11.1128 9.38427 10.8663 9.47424L9.39114 7.88883C9.54265 7.58119 9.62129 7.24279 9.62097 6.89986C9.62097 5.6603 8.61246 4.65183 7.37285 4.65183C6.13328 4.65183 5.12481 5.6603 5.12481 6.89986C5.12481 7.43129 5.31058 7.91991 5.62 8.30513L2.82935 12.7868C1.81511 11.37 1.3578 9.65372 1.53841 7.90561ZM11.6357 10.8385C12.0482 10.8385 12.3838 11.1741 12.3838 11.5866C12.3838 11.9991 12.0482 12.3347 11.6357 12.3347C11.2232 12.3347 10.8876 11.9991 10.8876 11.5866C10.8875 11.1741 11.2232 10.8385 11.6357 10.8385ZM6.62481 6.89982C6.62481 6.48732 6.96039 6.15174 7.37289 6.15174C7.78544 6.15174 8.12107 6.48732 8.12107 6.89982C8.12107 7.31232 7.78544 7.64794 7.37289 7.64794C6.96035 7.64799 6.62481 7.31236 6.62481 6.89982ZM2.24842 16.369C1.83592 16.369 1.50035 16.0334 1.50035 15.6208C1.50035 15.2083 1.83592 14.8727 2.24842 14.8727C2.66092 14.8727 2.99655 15.2083 2.99655 15.6208C2.99655 16.0334 2.66092 16.369 2.24842 16.369ZM8.65277 15.7788C8.40503 15.7788 8.15561 15.766 7.90577 15.7402C6.38425 15.583 4.98513 14.9577 3.87025 13.9527L6.89439 9.09615C7.05157 9.13047 7.21197 9.14782 7.37285 9.1479C7.69975 9.14813 8.02272 9.07662 8.31897 8.93841L9.70807 10.4312C9.49799 10.78 9.38719 11.1795 9.38763 11.5866C9.38763 12.8262 10.3961 13.8347 11.6357 13.8347C12.8753 13.8347 13.8837 12.8262 13.8837 11.5866C13.8841 11.1599 13.7622 10.7422 13.5326 10.3826L15.6169 7.13476C16.1607 9.67711 15.2939 12.43 13.1418 14.1791C11.857 15.2234 10.286 15.7789 8.65277 15.7788ZM20.9683 22.4867L16.6828 18.3282L18.2013 16.7632L22.4869 20.9217L20.9683 22.4867Z" fill="#428AED" />
+            </svg>
+            Выездная диагностика
+          </h3>
+          <ul class="mobile-diagnosis__list list-reset">
+            <li class="mobile-diagnosis__item">
+              <div class="mobile-diagnosis__item-wrapper background-gray">
+                <div class="mobile-diagnosis__item-content details-list"></div>
+                <h4 class="mobile-diagnosis__item-title">Результат осмотра от 25.11.2019 10:17</h4>
+                <div class="mobile-diagnosis__item-content-inspection details-list"></div>
+              <div class="mobile-diagnosis__item-content-inspection-characteristics details-list">
+                <div class="mobile-diagnosis__item-content-inspection-characteristics-like">
+                <span class="mobile-diagnosis__item-content-inspection-characteristics title-h3-flex"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.33333 5.66667H11.5093C11.7366 5.66667 11.96 5.72476 12.1585 5.83542C12.357 5.94607 12.5239 6.10562 12.6434 6.29891C12.7629 6.4922 12.831 6.71283 12.8413 6.93984C12.8515 7.16686 12.8036 7.39272 12.702 7.596L10.3687 12.2627C10.2579 12.4843 10.0876 12.6707 9.8768 12.8009C9.66601 12.9312 9.42311 13.0001 9.17533 13H6.49733C6.38867 13 6.28 12.9867 6.174 12.96L3.66667 12.3333M8.33333 5.66667V2.33333C8.33333 1.97971 8.19286 1.64057 7.94281 1.39052C7.69276 1.14048 7.35362 1 7 1H6.93667C6.60333 1 6.33333 1.27 6.33333 1.60333C6.33333 2.07933 6.19267 2.54467 5.928 2.94067L3.66667 6.33333V12.3333M8.33333 5.66667H7M3.66667 12.3333H2.33333C1.97971 12.3333 1.64057 12.1929 1.39052 11.9428C1.14048 11.6928 1 11.3536 1 11V7C1 6.64638 1.14048 6.30724 1.39052 6.05719C1.64057 5.80714 1.97971 5.66667 2.33333 5.66667H4" stroke="#6FCF97" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>Положительная характеристика:</span>
+                <ul class="mobile-diagnosis__item-content-inspection-characteristics-details1 ">
+                </ul>
+              </div>
+              <div class="mobile-diagnosis__item-content-inspection-characteristics-dislike">
+                <span class="mobile-diagnosis__item-content-inspection-characteristics title-h3-flex"><svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.83264 1.66667L7.32597 1.04C7.22023 1.0135 7.11164 1.00007 7.00264 1H4.32397C4.07631 1.00001 3.83354 1.069 3.62289 1.19923C3.41223 1.32946 3.24201 1.51579 3.1313 1.73733L0.79797 6.404C0.696392 6.60728 0.648454 6.83315 0.658707 7.06016C0.66896 7.28717 0.737063 7.5078 0.856553 7.70109C0.976042 7.89438 1.14295 8.05393 1.34144 8.16458C1.53992 8.27524 1.76339 8.33333 1.99064 8.33333H5.16664H6.49997M9.83264 1.66667L9.8333 7.66667L7.57197 11.0587C7.3073 11.4553 7.16664 11.9207 7.16664 12.3973C7.16664 12.73 6.89664 13 6.5633 13H6.4993C6.14568 13 5.80654 12.8595 5.55649 12.6095C5.30645 12.3594 5.16597 12.0203 5.16597 11.6667V8.33333M9.83264 1.66667H11.1666C11.5203 1.66667 11.8594 1.80714 12.1094 2.05719C12.3595 2.30724 12.5 2.64638 12.5 3V7C12.5 7.35362 12.3595 7.69276 12.1094 7.94281C11.8594 8.19286 11.5203 8.33333 11.1666 8.33333H9.49997" stroke="#D82121" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>Отрицательная характеристика:</span>
+                <ul class="mobile-diagnosis__item-content-inspection-characteristics-details2 ">
+                  
+                </ul>
+              </div>
+              </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="found-advertisements margin-section is-hidden">
+        <div class="container">
+          <h3 class="found-advertisements__title title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 20H5C4.46957 20 3.96086 19.7893 3.58579 19.4142C3.21071 19.0391 3 18.5304 3 18V6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H15C15.5304 4 16.0391 4.21071 16.4142 4.58579C16.7893 4.96086 17 5.46957 17 6V7M19 20C18.4696 20 17.9609 19.7893 17.5858 19.4142C17.2107 19.0391 17 18.5304 17 18V7M19 20C19.5304 20 20.0391 19.7893 20.4142 19.4142C20.7893 19.0391 21 18.5304 21 18V9C21 8.46957 20.7893 7.96086 20.4142 7.58579C20.0391 7.21071 19.5304 7 19 7H17M13 4H9M7 16H13M7 8H13V12H7V8Z" stroke="#428AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Найденные объявления</h3>
+          <ul class="found-advertisements__list list-reset">
+            <li class="found-advertisements__item">
+              <div class="found-advertisements__item-wrapper background-gray">
+                <div class="found-advertisements__item-name-and-link">
+                  <span class="found-advertisements__item-name title-h4">drom.ru 14.06.2023</span>
+                  <a class="found-advertisements__item-link" href="">Перейти</a>
+                </div>
+                <h4 class="found-advertisements__item-title title-h4">Продажа Datsun mi-Do, 2016 год в Москве
+                </h4>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Описание:</span>
+                  <p class="found-advertisements__item-text-desk desk-span">Автомобиль мой, на учете на мне на машине пробег 89 тыс. Оригинальный и не скрученный, Акпп в отличном состоянии, двигатель и ходовая тоже, из моих вложений : Замена блока Акпп (в прошлый попала вода и сгорел), передние тормозные диски и колодки, масло в акпп тоже заменил , стойки передние, заправил кондей(он кстати тоже работает), из минусов по кузову сколы и жизненные потертости машина не новая , так же на капоте и крыле жуки все видно фото, в салоне не курили, я 4й владелец, торг только у капота.</p>
+                </div>
+                <div class="found-advertisements__item-details details-list">
+                  <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">VIN:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">Z8NFAABD0H0012881</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Госномер:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">Т170СЕ777</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Год выпуска:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">2016</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Пробег:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">Чёрный</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Цена:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">540 000 руб.</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Город:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">Москва</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Продавец:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">Автомир Nissan</span>
+                </div>
+                <div class="found-advertisements__item-text details-text">
+                  <span class="found-advertisements__item-text-name name-span">Номер телефона продавца:</span>
+                  <span class="found-advertisements__item-text-desk desk-span">+7(499)938-49-12</span>
+                </div>
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="electronmic-pts margin-section is-hidden">
+        <div class="container">
+          <h3 class="electronmic-pts title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12H15M9 16H15M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H12.586C12.8512 3.00006 13.1055 3.10545 13.293 3.293L18.707 8.707C18.8946 8.89449 18.9999 9.1488 19 9.414V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z" stroke="#428AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Электронный ПТС</h3>
+          <ul class="electronmic-pts__list list-reset">
+            <li class="electronmic-pts__item">
+              <div class="electronmic-pts__item-wrapper background-gray details-list">
+                <div class="electronmic-pts__item-text details-text">
+                  <span class="electronmic-pts__item-text-name name-span">Статус электронного паспорта:</span>
+                  <span class="electronmic-pts__item-text-desk desk-span">Действующий</span>
+                </div>
+                <div class="electronmic-pts__item-text details-text">
+                  <span class="electronmic-pts__item-text-name name-span">Сведения об уплате утилизационного сбора:</span>
+                  <span class="electronmic-pts__item-text-desk desk-span">РФ уплачен</span>
+                </div>
+                <div class="electronmic-pts__item-text details-text">
+                  <span class="electronmic-pts__item-text-name name-span">Сведения о последнем регистрационном действии:</span>
+                  <span class="electronmic-pts__item-text-desk desk-span">РФ - Постановка на регистрационный учет (28.02.2024)</span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="osago-policies margin-section is-hidden">
+        <div class="container">
+          <h3 class="osago-policies__title title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12H15M9 16H15M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H12.586C12.8512 3.00006 13.1055 3.10545 13.293 3.293L18.707 8.707C18.8946 8.89449 18.9999 9.1488 19 9.414V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z" stroke="#428AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Информация о полисах ОСАГО</h3>
+          <ul class="osago-policies__list list-reset">
+            <li class="osago-policies__item">
+              <div class="osago-policies__item-wrapper background-gray">
+                <div class="osago-policies__item-title-and-status">
+                <h4 class="osago-policies__item-title title-h4">СПАО "Ингосстрах" </h4>
+                <img src="img/status-green.svg" alt="">
+                <span class="osago-policies__item-status title-h4">Действует</span>
+              </div>
+                 <div class="osago-policies__item-content details-list">
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Серия, номер полиса:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">ХХХ 0276467839</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Страхователь:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">Комиссаров Алексей Николаевич (24.06.1997)</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Собственник:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">Комиссаров Алексей Николаевич (24.06.1997)</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Марка (модель):</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">Datsun mi-DO</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">VIN:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">Z8NFAABD0H0012881</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Госномер:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">А847НВ790</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Мощность:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">167 л.с.</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">КБМ:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">0,5</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Регион:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">Московская обл, г Балашиха</span>
+                  </div>
+                 </div>
+              </div>
+            </li>
+            <li class="osago-policies__item">
+              <div class="osago-policies__item-wrapper background-gray">
+                <div class="osago-policies__item-title-and-status">
+                <h4 class="osago-policies__item-title title-h4">РЕНЕССАНС СТРАХОВАНИЕ </h4>
+                <img src="img/status-red.svg" alt="">
+                <span class="osago-policies__item-status title-h4">Не действует</span>
+              </div>
+                 <div class="osago-policies__item-content details-list">
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Серия, номер полиса:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">ЕЕЕ 0388508804</span>
+                  </div>
+                  <div class="osago-policies__item-content-text details-text">
+                    <span class="osago-policies__item-content-tex-name name-span">Регион:</span>
+                    <span class="osago-policies__item-content-tex-desk desk-span">г Москва</span>
+                  </div>
+                 </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="fines-information margin-section is-hidden">
+        <div class="container">
+          <h3 class="fines-information__title title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_67_63)">
+                <path d="M23.6252 13.5419C23.2679 13.3357 22.8118 13.4569 22.6035 13.8121L20.6771 12.6999L20.8448 12.4094C21.392 11.4614 21.066 10.2449 20.1181 9.69752L6.06888 1.58632C5.7681 1.41281 5.427 1.32141 5.07977 1.32129C4.37032 1.32129 3.71017 1.70121 3.35702 2.31288L0.265237 7.66798C-0.282123 8.61598 0.0438462 9.83252 0.991846 10.3799L7.64144 14.219V18.3661H4.53672C4.1913 16.7608 2.76142 15.5536 1.05433 15.5536C0.640143 15.5536 0.304331 15.8894 0.304331 16.3036V21.9286C0.304331 22.3429 0.640143 22.6786 1.05433 22.6786C2.76138 22.6786 4.19125 21.4714 4.53672 19.8661H8.39149C8.80567 19.8661 9.14149 19.5304 9.14149 19.1161V15.0851L15.0412 18.4912C15.3419 18.6647 15.683 18.7561 16.0302 18.7562C16.7397 18.7562 17.3998 18.3763 17.753 17.7646L17.8536 17.5903L19.8034 18.7161C19.7198 19.0349 19.8541 19.3827 20.1533 19.5554C20.267 19.6213 20.3962 19.656 20.5276 19.656C20.7868 19.656 21.0389 19.5215 21.1779 19.2809L21.4536 18.8032L21.4538 18.8029L21.4539 18.8027L23.8997 14.5665C24.1068 14.2078 23.9839 13.7491 23.6252 13.5419ZM1.80438 21.0375V17.1948C2.57191 17.4954 3.11688 18.2434 3.11688 19.1161C3.11688 19.9889 2.57186 20.7369 1.80438 21.0375ZM16.0302 17.2562C15.9452 17.2562 15.8648 17.2347 15.7911 17.1922L1.74189 9.08088C1.51413 8.94931 1.43275 8.64579 1.56428 8.41798L4.65602 3.06293C4.74208 2.91382 4.90446 2.82124 5.07977 2.82124C5.1648 2.82124 5.24524 2.8428 5.31888 2.88532L19.3681 10.9966C19.5959 11.1281 19.6773 11.4318 19.5458 11.6595L19.0036 12.5987L19.003 12.5995L19.0026 12.6003L16.93 16.1902C16.9299 16.1904 16.9297 16.1906 16.9296 16.1908L16.9293 16.1915L16.454 17.0146C16.3679 17.1636 16.2055 17.2562 16.0302 17.2562ZM19.9271 13.999L21.8532 15.111L20.5298 17.4034L18.6036 16.2913L19.9271 13.999ZM9.21185 7.59096C9.07296 7.83157 8.82082 7.9661 8.56164 7.9661C8.43442 7.9661 8.30547 7.93371 8.18735 7.86551L5.98539 6.59421C5.62666 6.38712 5.5038 5.92844 5.71089 5.56971C5.91794 5.21102 6.37666 5.08816 6.73539 5.29521L8.93735 6.56651C9.29603 6.7736 9.41894 7.23227 9.21185 7.59096Z" fill="#428AED" />
+              </g>
+              <defs>
+                <clipPath id="clip0_67_63">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            Информация о штрафах</h3>
+          <ul class="fines-information__list list-reset">
+            <li class="fines-information__item">
+              <div class="fines-information__item-wrapper background-gray">
+                <h4 class="fines-information__item-title title-h4">Штраф №1
+                </h4>
+                <div class="fines-information__item-content details-list">
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Дата и время нарушения: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">16.11.2018 03:52</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Статья КоАП РФ: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">12.26ч.1 - Невыполнение водителем законного требования сотрудника полиции о прохождении медицинского освидетельствования на состояние опьянения</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Подразделение ГИБДД: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">5 ОСБ ДПС ГИБДД ГУ МВД России по г. Москве</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Постановление: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">18810477185050026494 от 26.12.2018</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Сумма штрафа: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">30 000 руб.</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">УИН: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">18811630020016000140</span>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="fines-information__item">
+              <div class="fines-information__item-wrapper background-gray">
+                <h4 class="fines-information__item-title title-h4">Штраф №6
+                </h4>
+                <div class="fines-information__item-content details-list">
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Дата и время нарушения:  </span>
+                    <span class="fines-information__item-content-text-desk desk-span">23.03.2024 14:06</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Сумма штрафа: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">500</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Подразделение ГИБДД:  </span>
+                    <span class="fines-information__item-content-text-desk desk-span">ЦАФАП в ОДД ГИБДД УМВД России по Вологодской области</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Статья КоАП РФ:  </span>
+                    <span class="fines-information__item-content-text-desk desk-span">12.9ч.2 – Превышение установленной скорости движения транспортного средства на величину более 20, но не более 40 км/ч</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Постановление: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">18810535240326016445 от 26.03.2024</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">Действует скидка:  </span>
+                    <span class="fines-information__item-content-text-desk desk-span">250 руб. до 15.04.2024</span>
+                  </div>
+                  <div class="fines-information__item-content-text details-text">
+                    <span class="fines-information__item-content-text-name name-span">УИН: </span>
+                    <span class="fines-information__item-content-text-desk desk-span">250 руб. до 15.04.2024</span>
+                  </div>
+                </div>
+               <hr>
+                <div class="fines-information__item-content-photo-materials">
+               <h4 class="fines-information__item-content-photo-materials-title title-h4">Фотоматериалы</h4>
+               <img src="img/r1.png" alt="">
+              </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="reviews margin-section is-hidden">
+        <div class="container">
+          <h3 class="reviews__title title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.951 2.92708C12.652 2.00608 11.349 2.00608 11.049 2.92708L9.52997 7.60108C9.46455 7.80173 9.33732 7.97654 9.1665 8.10048C8.99568 8.22442 8.79002 8.29113 8.57897 8.29108H3.66497C2.69697 8.29108 2.29297 9.53108 3.07697 10.1011L7.05297 12.9891C7.22377 13.1132 7.35087 13.2883 7.41608 13.4891C7.48129 13.6899 7.48125 13.9063 7.41597 14.1071L5.89797 18.7811C5.59797 19.7021 6.65297 20.4691 7.43597 19.8991L11.412 17.0111C11.5829 16.8869 11.7887 16.8199 12 16.8199C12.2112 16.8199 12.4171 16.8869 12.588 17.0111L16.564 19.8991C17.347 20.4691 18.402 19.7031 18.102 18.7811L16.584 14.1071C16.5187 13.9063 16.5187 13.6899 16.5839 13.4891C16.6491 13.2883 16.7762 13.1132 16.947 12.9891L20.923 10.1011C21.706 9.53108 21.304 8.29108 20.335 8.29108H15.42C15.2091 8.29092 15.0037 8.22411 14.833 8.10018C14.6624 7.97626 14.5353 7.80157 14.47 7.60108L12.951 2.92708Z" stroke="#428AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>Отзывные компании</h3>
+          <ul class="reviews__list list-reset">
+            <li class="reviews__item">
+              <div class="reviews__item-wrapper background-gray">
+                <h4 class="reviews__item-title title-h4">Отзывная компания №RC220004 от 25.03.2022
+                </h4>
+                <div class="reviews__item-content">
+                  <div class="reviews__item-content-text details-text"> 
+                    <span class="reviews__item-content-text-name name-span">Производитель:</span>
+                    <span class="reviews__item-content-text-desk desk-span">ООО Фольксваген Груп Рус</span>
+                  </div>
+                  <div class="reviews__item-content-text details-text"> 
+                    <span class="reviews__item-content-text-name name-span">Причина отзыва:</span>
+                    <p class="reviews__item-content-text-desk desk-span">Автомобили, попадающие под действие данной отзывной кампании, оборудованы топливным насосом низкого давления, который расположен в топливном баке и создает давление в системе впрыска топлива двигателя. В указанных насосах может быть установлена крыльчатка, которая могла быть изготовлена из материала пониженной плотности. В силу наличия внутреннего напряжения материала или из-за особенностей изготовления крыльчатки, при котором происходит длительное испарение растворителя, возможно возникновение поверхностного растрескивания крыльчатки. В этой ситуации возможно проникновение топлива в материал крыльчатки, что может привести к ее деформации. В отдельных случаях крыльчатка может деформироваться таким образом, что может произойти контакт крыльчатки с корпусом топливного насоса, что, в свою очередь, может повлиять на работоспособность топливного насоса. В случае нарушения работоспособности топливного насоса возможно включение индикации на панели приборов неисправности двигателя и других предупреждающих индикаторов, возможна неравномерная работа двигателя, невозможность запуска двигателя, а также возможно выключение двигателя в случае движения с невысокой скоростью. Однако, в отдельных ситуациях, возможна остановка двигателя и при движении с повышенной скоростью, что может увеличить риск возникновения аварийной ситуации.
+                    </p>
+                  </div>
+                  <div class="reviews__item-content-text details-text"> 
+                    <span class="reviews__item-content-text-name name-span">Посмотреть в источнике:</span>
+                    <span class="reviews__item-content-text-desk desk-span">https://www.rst.gov.ru//newsRST/redirect/REVOCABLE_PROGRAMS/95/8520)
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="vin-information margin-section is-hidden">
+        <div class="container">
+          <h3 class="vin-information__title title-h3 title-h3-flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12H15M9 16H15M17 21H7C6.46957 21 5.96086 20.7893 5.58579 20.4142C5.21071 20.0391 5 19.5304 5 19V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H12.586C12.8512 3.00006 13.1055 3.10545 13.293 3.293L18.707 8.707C18.8946 8.89449 18.9999 9.1488 19 9.414V19C19 19.5304 18.7893 20.0391 18.4142 20.4142C18.0391 20.7893 17.5304 21 17 21Z" stroke="#428AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Информация по VIN</h3>
+            <div class="vin-information__list">
+          <div class="vin-information__content background-gray details-list">
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">VIN:</span>
+              <span class="vin-information__content-text-desk desk-span">Z8NFAABD0H0012881</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Марка (модель):</span>
+              <span class="vin-information__content-text-desk desk-span">DATSUN mi-DO</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Поколение:</span>
+              <span class="vin-information__content-text-desk desk-span">1</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Двигатель:</span>
+              <span class="vin-information__content-text-desk desk-span">Euro 4</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Мощность:</span>
+              <span class="vin-information__content-text-desk desk-span">86,09 л.с.</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Крутящий момент:</span>
+              <span class="vin-information__content-text-desk desk-span">140 Н/м</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Количество дверей:</span>
+              <span class="vin-information__content-text-desk desk-span">5</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Начало производства:</span>
+              <span class="vin-information__content-text-desk desk-span">2015</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Страна происхождения:</span>
+              <span class="vin-information__content-text-desk desk-span">Russia</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Рынок сбыта:</span>
+              <span class="vin-information__content-text-desk desk-span">EU</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Производитель:</span>
+              <span class="vin-information__content-text-desk desk-span">ООО Ниссан Мэнуфэкчуринг Рус</span>
+            </div>
+            <div class="vin-information__content-text details-text">
+              <span class="vin-information__content-text-name name-span">Адрес производителя:</span>
+              <span class="vin-information__content-text-desk desk-span">участок 3 (кварт Ленинградская область поселок Парголово промзона Каменка</span>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="car-photo margin-section is-hidden">
+        <div class="container">
+          <h3 class="car-photo__title title-h3 title-h3-flex"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 16L8.586 11.414C8.96106 11.0391 9.46967 10.8284 10 10.8284C10.5303 10.8284 11.0389 11.0391 11.414 11.414L16 16M14 14L15.586 12.414C15.9611 12.0391 16.4697 11.8284 17 11.8284C17.5303 11.8284 18.0389 12.0391 18.414 12.414L20 14M14 8H14.01M6 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V6C20 5.46957 19.7893 4.96086 19.4142 4.58579C19.0391 4.21071 18.5304 4 18 4H6C5.46957 4 4.96086 4.21071 4.58579 4.58579C4.21071 4.96086 4 5.46957 4 6V18C4 18.5304 4.21071 19.0391 4.58579 19.4142C4.96086 19.7893 5.46957 20 6 20Z" stroke="#428AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+            Фото автомобиля</h3>
+          <div class="car-photo__content details-list">
+            <img src="img/car1.png" alt="" width="346" height="261">
+            <img src="img/car2.png" alt="" width="346" height="261">
+            <img src="img/car3.png" alt="" width="346" height="261">
+            <img src="img/car4.png" alt="" width="346" height="261">
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
